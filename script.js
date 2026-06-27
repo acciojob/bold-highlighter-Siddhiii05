@@ -1,20 +1,15 @@
 function highlight() {
-    //Write your code here
-	 const boldWords = document.querySelectorAll("strong");
+    var boldItems = document.getElementsByTagName("strong");
 
-    boldWords.forEach(word => {
-        word.style.color = "rgb(0, 128, 0)";
-    });
-
+    for (var i = 0; i < boldItems.length; i++) {
+        boldItems[i].style.color = "rgb(0, 128, 0)";
+    }
 }
 
-
 function return_normal() {
-    //Write your code here
-	 const boldWords = document.querySelectorAll("strong");
+    var boldItems = document.getElementsByTagName("strong");
 
-    boldWords.forEach(word => {
-        word.style.color = "rgb(0, 0, 0)";
-    });
-    
+    for (var i = 0; i < boldItems.length; i++) {
+        boldItems[i].style.color = "rgb(0, 0, 0)";
+    }
 }
